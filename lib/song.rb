@@ -11,7 +11,7 @@ class Song
     
     @@count += 1
     if !@@genre.include? genre
-      @@genre << genre
+      @@genre.push(genre)
     end
   end
   

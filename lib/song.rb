@@ -10,9 +10,7 @@ class Song
     @genre = genre
     
     @@count += 1
-    if !@@genre.include? genre
-      @@genre.push(genre)
-    end
+    @@genre.push(genre)
   end
   
   def self.count
@@ -20,6 +18,6 @@ class Song
   end
   
   def self.genre
-    @@genre
+    @@genre.uniq
   end
 end

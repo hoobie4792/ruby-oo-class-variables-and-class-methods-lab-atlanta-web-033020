@@ -35,5 +35,7 @@ class Song
       end
       hash[genre] += 1
     end
+    
+    hash
   end
 end
